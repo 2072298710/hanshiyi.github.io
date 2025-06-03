@@ -4,13 +4,42 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2025/06/03/hello-world/"/>
-      <url>/2025/06/03/hello-world/</url>
+      <title>《ArrayList的底层原理》</title>
+      <link href="/2025/06/03/2025060319/"/>
+      <url>/2025/06/03/2025060319/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start">Quick Start</h2><h3 id="Create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="简介">简介</h2><p><strong>ArrayList</strong> 是 Java 中常用的动态数组实现，是基于<strong>数组实现的可变长度集合</strong>，可以看作是一个动态数组结构，通过一个内部数组 <code>Object[] elementData</code>存储元素。</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 默认构造函数</span></span><br><span class="line"><span class="keyword">public</span> <span class="title function_">ArrayList</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 指定初始容量</span></span><br><span class="line"><span class="keyword">public</span> <span class="title function_">ArrayList</span><span class="params">(<span class="type">int</span> initialCapacity)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (initialCapacity &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">this</span>.elementData = <span class="keyword">new</span> <span class="title class_">Object</span>[initialCapacity];</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (initialCapacity == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">this</span>.elementData = EMPTY_ELEMENTDATA;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>(<span class="string">&quot;Illegal Capacity: &quot;</span>+</span><br><span class="line">                                           initialCapacity);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="扩容机制">扩容机制</h2><p>扩容机制是 ArrayList 的核心，ArrayList 默认的初始容量为 10，当数组容量不够时，会进行扩容。扩容的机制是：将原数组的容量翻倍，并创建一个新的数组，将原数组中的元素复制到新数组中。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Java基础 </tag>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《素笺初展时》</title>
+      <link href="/2025/06/03/start/"/>
+      <url>/2025/06/03/start/</url>
+      
+        <content type="html"><![CDATA[<h2 id="启程时刻-✨">启程时刻 ✨</h2><p><strong>2025 年 6 月 3 日</strong>，博客的第一页在此展开。</p><blockquote><p>像翻开一本新日记的扉页，<br>干净而安静。<br>键盘尚未温热，页面素净如雪，<br>宛如新铺的小径，<br>等待足迹的落下，思绪的绵延。</p></blockquote><h3 id="避风角落-🏮">避风角落 🏮</h3><p>这里不是喧嚣之地，<br>而是：</p><ul><li>记录想法的 📖 记事本</li><li>分享灵感的 💡 储藏间</li><li>偶尔碎语的 🌙 夜光灯</li></ul><h3 id="慢写宣言-🖋️">慢写宣言 🖋️</h3><p>在这个快转的世界里，<br>我们选择：</p><ol><li><strong>给文字以呼吸的空间</strong></li><li><strong>为心情保留回望的窗口</strong></li><li><strong>替未来的自己点亮一盏灯</strong></li></ol><blockquote><p>“若无一丝错落，<br>人生怎会如诗？”</p></blockquote><hr><p>🌱 <strong>从今日起</strong>，与博客共生长。<br>🫂 <strong>欢迎你</strong>，愿常常相逢。</p><p>—— 记于起点</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
       
     </entry>
     
